@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Yonetici.Master.cs" Inherits="BlogSitesi.MasterPages.Okuyucu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        #form1 {
+            background-color: #F8EFEB;
+        }
+        .auto-style11 {
+            height: 20px;
+            width: 1000px;
+            float: left;
+        }
+        .auto-style14 {
+            text-align: left;
+        }
+        .auto-style15 {
+            text-align: center;
+        }
+        .auto-style16 {
+            text-align: center;
+            height: 25px;
+        }
+        </style>
+</head>
+    <body style="background-color: #FFFFFF; height: 1000px; margin-top:0px">
+        <form id="form1" runat="server" style="height:1500px;">
+            <div style="height: 100px; width: 1000px; margin-left:300px; float:left; background-color: #EAC7F3;" >
+                                <br />
+                <br />
+                <h3 class="auto-style1" style="border-style: none; border-color: inherit; border-width: 0px; margin: 0px 0px 0px 80px; padding: 0px; color: rgb(102, 102, 102); font-weight: 400; pointer-events: none; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Kişisel Bloğunu Düzenle</h3>
+            </div>
+            <div style="height: 20px; width: 1000px; margin-left:300px; float:left; background-color: #F8EFEB;" ></div>
+    
+                     <div style="margin-left:300px; height:10px; background-color: #F8EFEB;;" class="auto-style11" ></div>
+                <div style="margin-left:300px; width: 1000px; height:1000px;">
+                 <div style="height: 150px; width: 250px; float:left; margin-left:0px; background-color: #EAC7F3;" > 
+                     <div style="width:250px; :left; background-color:#8E24AA; border:1px dotted #8E24AA; color:#F8EFEB; line-height:30px  " class="auto-style14">MENU</div>
+
+                     <div style="height:25px; color:#8E24AA; margin-top:5px;" class="auto-style15"><strong><a href="../WebForms/Kategoriler.aspx" style="color:#8E24AA;text-decoration:none;" hover="color:#8E24AA;">Kategoriler</a></strong> </div>
+                     <div style="color:#8E24AA; margin-top:5px;" class="auto-style16"><strong><a href="../WebForms/Makaleler.aspx" style="color:#8E24AA;text-decoration:none;" hover="color:#8E24AA;">Makaleler</a></strong> </div>
+                     <div style="height:25px; color:#8E24AA; margin-top:5px;" class="auto-style15"><strong><a href="../WebForms/Yorumlar.aspx" style="color:#8E24AA;text-decoration:none;" hover="color:#8E24AA;">Yorumlar</a></strong> </div>
+                     <div style="height:25px; color:#8E24AA; margin-top:5px;" class="auto-style15"><strong><a href="../WebForms/Mesajlar.aspx" style="color:#8E24AA;text-decoration:none;" hover="color:#8E24AA;">Mesajlar</a></strong> </div>
+                 </div>
+
+                <div style="margin-left: 10px; height:1000px; width:740px; float:left; background-color: #EAC7F3;">
+                  <asp:ContentPlaceHolder  ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                   </div>
+            
+
+            </div></form>
+     </body>
+</html>

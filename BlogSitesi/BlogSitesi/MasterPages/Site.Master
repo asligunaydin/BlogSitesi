@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="BlogSitesi.MasterPages.Yonetici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        #form1 {
+            background-color: #F8EFEB;
+        }
+        .auto-style7 {
+            text-align: center;
+            color: #000066;
+            width: 336px;
+        }
+        .auto-style9 {
+            width: 202px;
+            text-align: center;
+        }
+        .auto-style10 {
+            width: 201px;
+            text-align: center;
+        }
+        .auto-style11 {
+            height: 20px;
+            width: 1000px;
+            float: left;
+        }
+        .auto-style12 {
+            color: #712850;
+        }
+        .auto-style14 {
+            text-align: center;
+        }
+        </style>
+</head>
+    <body style="background-color: #FFFFFF; height: 1000px; margin-top:0px">
+        <form id="form1" runat="server" style="height:1500px;">
+            <div style="height: 300px; width: 1000px; margin-left:300px; float:left; background-color: #EAC7F3;" >
+</div>
+            <div style="height: 20px; width: 1000px; margin-left:300px; float:left; background-color: #F8EFEB;" ></div>
+            <div style="height: 30px; width: 1000px; margin-left:300px; float:left; background-color: #EAC7F3;" >
+                <table class="auto-style1">
+                    <tr>
+                        
+                        <td class="auto-style7"><a>Kişisel Blog</a></td>
+                        <td class="auto-style10"><a href="Subeler.aspx" ><span class="auto-style12">Bloğum</span></a></td>
+                        <td class="auto-style9"><a href="Calisanlar.aspx" ><span class="auto-style12">Hakkımda</span></a></td>
+                        <td class="auto-style14"><a href="Dagitim.aspx" ><span class="auto-style12">İletişim</span></a></td>
+                    </tr>
+                </table>
+            </div>
+                     <div style="margin-left:300px; height:60px; background-color: #F8EFEB;;" class="auto-style11" ></div>
+                                <div style="margin-left:300px; width: 1000px; height:1000px;">
+                 <div style="height: auto; width: 250px; float:left; margin-left:0px; background-color: #EAC7F3;" > 
+                     <div style="width:250px; ; background-color:#8E24AA; border:1px dotted #8E24AA; color:#F8EFEB; line-height:30px  " class="auto-style14">KATEGORİLER</div>
+
+                     
+                 &nbsp;<asp:DataList ID="dl_Kategori" runat="server" Width="100%">
+                         <ItemTemplate>
+                             <table class="auto-style1">
+                                 <tr>
+                                     <td>
+                                         <asp:Image ID="Image1" runat="server" Height="30px" Width="30px" />
+                                     </td>
+                                     <td style="width: 230px">
+                                         <asp:Literal ID="Literal1" runat="server" Text='<%# Eval("kategoriAd") %>'></asp:Literal>
+                                         &nbsp;(<asp:Literal ID="Literal2" runat="server" Text='<%# Eval("kategoriadet") %>'></asp:Literal>
+                                         )</td>
+                                 </tr>
+                             </table>
+                         </ItemTemplate>
+                     </asp:DataList>
+
+                     
+                 </div>
+
+                <div style="margin-left: 10px; height:1000px; width:740px; float:left; background-color: #EAC7F3;">
+                  <asp:ContentPlaceHolder  ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                   </div>
+            
+
+            </div></form>
+     </body>
+</html>
